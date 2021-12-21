@@ -62,6 +62,8 @@ $("#countdown").countdown({
       )
       .append(
         "<div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div>"
-      );
+      )
+      .append(
+      "<div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
   },
 });
